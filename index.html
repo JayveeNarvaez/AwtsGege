@@ -3,24 +3,27 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+
 </head>
-<body>
+<body style="background-image:url(new-york-page.png); background-size:cover; background-repeat:no-repeat; text-align:center; color:Blue; font-size:36px; font-family:century gothic;">
+  <p style="color:Black;"><b>FIBONACCI SEQUENCE</b></p>
   <script type="text/javascript">
   var a=0;
   var b=1;
   var c;
   
-var x=prompt("please enter the number",0);
+var d=prompt("please enter the range you want",0);
   document.write(a+"<br/>");
   document.write(b+"<br/>");
   
-  for(var i=3; i<x; i++)
+  for(var i=3; i<=d; i++)
     {
       c=a+b;
       a=b;
       b=c;
+      
+     document.write(c+"<br/>");
     }
-</script>
+  </script>
 </body>
 </html>
