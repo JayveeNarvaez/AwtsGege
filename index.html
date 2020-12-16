@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-   
-      
-    </head>
-    <body>
-      <script type="text/javascript">
-     
-
-      var var1 = 0;
-      var var2 = 1;
-      var var3 = ;
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var a=0;
+  var b=1;
+  var c;
   
-  var num=prompt("Enter the range of numbers",0);
+var x=prompt("please enter the number",0);
+  document.write(a+"<br/>");
+  document.write(b+"<br/>");
   
-  document.write(var1+"<br/>");
-  document.write(var2+"<br/>");
-  
-      for(var i=3;i<num;i++)
-      {
-        var3 = var1 + var2;
-        var1 = var2; 
-        var2 = var3;  
-        
-        document.write(var3+"<br/>");
-      }
-      
-      
-      </script>
-      
-    </body>
+  for(var i=3; i<x; i++)
+    {
+      c=a+b;
+      a=b;
+      b=c;
+    }
+</script>
+</body>
 </html>
