@@ -2,28 +2,19 @@
 
 <html>
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-
+  <link rel="stylesheet" type="text/css" href="style.css"
+  
 </head>
-<body style="background-image:url(new-york-page.png); background-size:cover; background-repeat:no-repeat; text-align:center; color:Blue; font-size:36px; font-family:century gothic;">
-  <p style="color:Black;"><b>FIBONACCI SEQUENCE</b></p>
-  <script type="text/javascript">
-  var a=0;
-  var b=1;
-  var c;
-  
-var d=prompt("please enter the range you want",0);
-  document.write(a+"<br/>");
-  document.write(b+"<br/>");
-  
-  for(var i=3; i<=d; i++)
-    {
-      c=a+b;
-      a=b;
-      b=c;
-      
-     document.write(c+"<br/>");
-    }
-  </script>
+<body>
+<script src="Fonts/js.js"></script>
+  <div id = "box">
+<h1> What is your constellation sign ?</h1>
+</div>
+<h2> Enter your birthday. </h2>
+<p>Month:<input type="number" id="month" min="1" max="12" ></p>
+<p> Day:<input type="number" id="day" min="1" max="31"></p>
+<a id="animated" onclick="zodiac()"  class="button">Find your zodiac sign! </a>
+<p id="space"> Your zodiac sign is <span "output"></span> </p>
+  <p id="characteristic"></p>
 </body>
 </html>
