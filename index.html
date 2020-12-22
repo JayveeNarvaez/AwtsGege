@@ -2,19 +2,63 @@
 
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css"
-  <script src="js.js"></script>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
 </head>
-<body>
+<body style="background-image: url('bg.png'); background-repeat:no-repeat; background-size:cover; font-size:40px; color:Red;">
+<script language="javascript">
+function signs() {
+ day=document.zodiac.day.value, month=document.zodiac.month.selectedIndex;
 
-  <div id = "box">
-<h1> What is your constellation sign ?</h1>
-</div>
-<h2> Enter your birthday. </h2>
-<p>Month:<input type="number" id="month" min="1" max="12" ></p>
-<p> Day:<input type="number" id="day" min="1" max="31"></p>
-<a id="animated" onclick="zodiac()"  class="button">Find your zodiac sign! </a>
-<p id="space"> Your zodiac sign is <span "output"></span> </p>
-  <p id="characteristic"></p>
+with (document.zodiac.sign){
+
+if (month == 1 && day >=20 || month == 2 && day <=18) {value = "Aquarius";}
+  
+if (month == 1 && day > 31) {value = "There's no like that";}
+if (month == 2 && day >=19 || month == 3 && day <=20) {value = "Pisces";}
+if (month == 2 && day > 29) {value = "There's no like that";}
+if (month == 3 && day >=21 || month == 4 && day <=19) {value = "Aries";}
+if (month == 3 && day > 31) {value = "There' no like that";}
+if (month == 4 && day >=20 || month == 5 && day <=20) {value = "Taurus";}
+if (month == 4 && day > 30) {value = "There's no like that";}
+if (month == 5 && day >=21 || month == 6 && day <=21) {value = "Gemini";}
+if (month == 5 && day > 31) {value = "There's no like that";}
+if (month == 6 && day >=22 || month == 7 && day <=22) {value = "Cancer";}
+if (month == 6 && day > 30) {value = "There's no like that";}
+if (month == 7 && day >=23 || month == 8 && day <=22) {value = "Leo";}
+if (month == 7 && day > 31) {value = "There's no like that";}
+if (month == 8 && day >=23 || month == 9 && day <=22) {value = "Virgo";}
+if (month == 8 && day > 31) {value = "There's no like that";}
+if (month == 9 && day >=23 || month == 10 && day <=22) {value = "Libra";}
+if (month == 9 && day > 30) {value = "There's no like that";}
+if (month == 10 && day >=23 || month == 11 && day <=21) {value = "Scorpio";}
+if (month == 10 && day > 31) {value = "There's no like that";}
+if (month == 11 && day >=22 || month == 12 && day <=21) {value = "Sagittarius";}
+if (month == 11 && day > 30) {value = "There's no like that";}
+if (month == 12 && day >=22 || month == 1 && day <=19) {value = "Capricorn";}
+if (month == 12 && day > 31) {value = "There's no like that";}
+}
+}
+</script>
+
+<center><b>ZODIAC SIGN GENERATOR</b></center></br>
+<form name="zodiac">
+  <center>
+	<b><i>Month</i>
+	<div align="center">
+<select name="month">
+<option value="x">Select Birth Month</option>
+<option value="1">January</option><option value="2">February</option><option value="3">March</option>
+<option value="4">April</option><option value="5">May</option><option value="6">June</option>
+<option value="7">July</option><option value="8">August</option><option value="9">September</option>
+<option value="10">October</option><option value="11">November</option>
+<option value="12">December</option></select></div>
+	<b><i>Day</i></b>
+	<div align="center"><input type="text" name="day"value="Day" size="3" onClick=value=""><br>
+	<b><i>Zodiac Sign:</i></b>
+	<div align="center"><input type="text" name="sign" size="12" value="" align="right"></div><br>
+	<input type="button" value="Calculate" onClick="signs()"></div>
+	  
+	</center> 
+	</form>
 </body>
 </html>
